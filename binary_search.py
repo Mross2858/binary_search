@@ -78,13 +78,12 @@ def helper_function_l(xs, x):
             left = mid + 1
         return go(left, right)
     return go(0, len(xs) - 1)
-            
-
 
 
 def helper_function_r(xs, x):
     if len(xs) == 0:
         return None
+
     def go(left, right):
         mid = (left + right) // 2
         if left == right - 1:
