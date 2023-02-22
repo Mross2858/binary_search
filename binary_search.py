@@ -103,7 +103,7 @@ def helper_function_r(xs, x):
         if xs[mid] > x:
             left = mid
         if xs[mid] == x:
-            if xs[mid+1] != x:
+            if xs[mid + 1] != x:
                 return mid
             else:
                 left = mid
